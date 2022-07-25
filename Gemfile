@@ -78,6 +78,5 @@ group :test do
   gem "minitest-reporters"
   gem "guard"
   gem "guard-minitest"
-
-
+  gem "pry", "~> 0.14.1"
 end
