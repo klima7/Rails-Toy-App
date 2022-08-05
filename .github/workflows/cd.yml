@@ -1,5 +1,10 @@
-name: Continuous Deployment
-on: [push, pull_request]
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   test:
     name: Test
@@ -20,3 +25,9 @@ jobs:
       - name: Run Tests
         run:
           rails test
+      - name: Deploy
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "klima7-rails-toy-app"
+          heroku_email: "ukasz.klimkiewicz@gmail.com"
