@@ -99,6 +99,7 @@ GEM
     erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x64-unknown)
     formatador (1.1.0)
     globalid (1.0.0)
@@ -167,6 +168,8 @@ GEM
       timeout
     nio4r (2.5.8)
     nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.13.8-x64-unknown)
       racc (~> 1.4)
@@ -275,6 +278,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x64-mingw-ucrt
   x64-unknown
   x86_64-linux
 
