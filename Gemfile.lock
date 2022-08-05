@@ -116,6 +116,9 @@ GEM
     guard-minitest (2.4.6)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    hotwire-livereload (1.2.1)
+      listen (>= 3.0.0)
+      rails (>= 6.0.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -283,6 +286,7 @@ DEPENDENCIES
   debug
   guard
   guard-minitest
+  hotwire-livereload
   importmap-rails
   jbuilder
   minitest
