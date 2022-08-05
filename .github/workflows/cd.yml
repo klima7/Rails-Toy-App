@@ -1,0 +1,22 @@
+name: Continuous Deployment
+on: [push, pull_request]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: Install Bundler
+        run:
+          gem install bundler
+      - name: Install Dependencies
+        run:
+          bundle install --without development production
+      - name: Run Tests
+        run:
+          rails test
