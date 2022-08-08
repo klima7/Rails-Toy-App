@@ -1,1 +1,1 @@
-alert("Javascript works")
+alert("Help!")
