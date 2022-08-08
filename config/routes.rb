@@ -5,9 +5,7 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   get 'static_pages/contact'
 
-  get '/test/:id', to: 'application#test'
-  get :goodbye, action: :goodbye, controller: 'application'
-
+  get :hello, action: :hello, controller: 'application'
   resources :microposts
   resources :users
 end
